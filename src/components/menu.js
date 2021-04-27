@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
-// import axios from 'axios';
 import { AppBar, Toolbar, IconButton, Typography, Button, Drawer, List, CssBaseline, Divider, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
 import { useTheme } from '@material-ui/core/styles';
@@ -9,7 +8,6 @@ import { LOGIN_USER } from '../reducers/authReducer';
 import { PICK_UP } from '../reducers/alertReducer';
 import { 
    FaUser, 
-   // FaUsers 
 } from 'react-icons/fa';
 import { HiViewGrid } from 'react-icons/hi';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -21,7 +19,6 @@ import { useStyles } from './styles';
 const listMenu = [
    { id: 0, title: 'Home', url: '/home', icon: <FaUser size={25} /> },
    { id: 1, title: 'Works', url: '/works', icon: <HiViewGrid size={25} /> },
-   // { id: 2, title: 'Users', url: '/users', icon: <FaUsers size={25} /> },
 ]
 
 const Menu = ({ children }) => {
@@ -84,10 +81,6 @@ const Menu = ({ children }) => {
       setTitleMenu(item.title)
       history.push(item.url);
    };
-
-   // const outService = () => {
-   //    dispatch({ type: PICK_UP, payload: { open: true, severity: 'warning', message: `Fuera de Servicio` } })
-   // }
 
    const onlyEmail = (email) => {
       const indice = email.indexOf('@');
