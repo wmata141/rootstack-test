@@ -9,7 +9,7 @@ import { LOGIN_USER } from '../reducers/authReducer';
 import { PICK_UP } from '../reducers/alertReducer';
 import { 
    FaUser, 
-   FaUsers 
+   // FaUsers 
 } from 'react-icons/fa';
 import { HiViewGrid } from 'react-icons/hi';
 import MenuIcon from '@material-ui/icons/Menu';

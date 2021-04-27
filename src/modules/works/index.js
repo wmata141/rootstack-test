@@ -1,10 +1,13 @@
 import React from 'react';
-import Table from './components/table';
+import JobsTable from './components/jobsTable';
+import JobsMap from './components/jobsMap';
 
 const Works = () => {
   return (
     <div>
-      <Table />
+      <JobsMap />
+      <br></br>
+      <JobsTable />
     </div>
   );
 }

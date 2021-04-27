@@ -28,15 +28,15 @@ const StyledTableRow = withStyles((theme) => ({
   },
 }))(TableRow);
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
+// function createData(name, calories, fat, carbs, protein) {
+//   return { name, calories, fat, carbs, protein };
+// }
 
-const rows = [
-  createData('Nombre 1', '123456789', 'corre1@gmail.com'),
-  createData('Nombre 2', '123456789', 'corre2@gmail.com'),
-  createData('Nombre 3', '123456789', 'corre3@gmail.com'),
-];
+// const rows = [
+//   createData('Nombre 1', '123456789', 'corre1@gmail.com'),
+//   createData('Nombre 2', '123456789', 'corre2@gmail.com'),
+//   createData('Nombre 3', '123456789', 'corre3@gmail.com'),
+// ];
 
 const useStyles = makeStyles({
   table: {
@@ -44,7 +44,7 @@ const useStyles = makeStyles({
   },
 });
 
-const TableComponent = () => {
+const JobsTable = () => {
   const [jobs, setJobs] = useState([]);
 
   const dispatch = useDispatch()
@@ -111,4 +111,4 @@ const TableComponent = () => {
   );
 }
 
-export default TableComponent
+export default JobsTable
